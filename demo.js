@@ -1,3 +1,8 @@
+const isPair = function (a, fn){
+    if (a % 2 === 0){
+        fn(a) 
+    }
+}
 
 
 
@@ -5,6 +10,46 @@
 
 
 
+
+isPair(4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const somme = (a, b) => a + b 
+// console.log(somme(1,22))
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const a = {
+//     firstname: 'John',
+//     lastname : 'beau',
+//     fullname: function(){
+//         console.log(`${this.firstname} ${this.lastname}`)
+//     }
+// }
+
+// a.fullname()
 
 
 
