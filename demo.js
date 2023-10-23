@@ -1,30 +1,80 @@
-function motifFlecheVersLeBas(n) {
-    if (n < 1) {
-        return "Plus grand mon vieux";
-    }
 
-    let motif = "";
-    for (let i = n; i >= 1; i--) {
-        motif += " ".repeat(n - i);
 
-        for (let j = 1; j <= i; j++) {
-            motif += j;
-        }
 
-        for (let j = i - 1; j >= 1; j--) {
-            motif += j;
-        }
 
-        motif += "\n";
-    }
 
-    return motif;
-}
 
-console.log(motifFlecheVersLeBas(0));
-console.log(motifFlecheVersLeBas(5));
-console.log(motifFlecheVersLeBas(11));
-console.log(motifFlecheVersLeBas(21));
+
+
+
+
+
+
+
+
+
+
+
+
+// function greeting(name){
+//     name = prompt('quelle est votre nom ?') 
+//     console.log(`Bonjour ${name}`)
+// }
+
+
+// greeting();
+
+
+
+
+
+
+
+
+// function canDrive(age, pays){
+//     if (
+//         (age >= 18 && pays === 'FR') || (age >= 16 && pays === 'US')
+//     ){
+//         return true
+//     } return false
+// }
+
+// console.log(canDrive(18, 'FR'))
+
+
+
+
+
+
+
+
+// function motifFlecheVersLeBas(n) {
+//     if (n < 1) {
+//         return "Plus grand mon vieux";
+//     }
+
+//     let motif = "";
+//     for (let i = n; i >= 1; i--) {
+//         motif += " ".repeat(n - i);
+
+//         for (let j = 1; j <= i; j++) {
+//             motif += j;
+//         }
+
+//         for (let j = i - 1; j >= 1; j--) {
+//             motif += j;
+//         }
+
+//         motif += "\n";
+//     }
+
+//     return motif;
+// }
+
+// console.log(motifFlecheVersLeBas(0));
+// console.log(motifFlecheVersLeBas(5));
+// console.log(motifFlecheVersLeBas(11));
+// console.log(motifFlecheVersLeBas(21));
 
 
 
