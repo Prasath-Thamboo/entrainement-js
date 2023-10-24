@@ -1,8 +1,3 @@
-const isPair = function (a, fn){
-    if (a % 2 === 0){
-        fn(a) 
-    }
-}
 
 
 
@@ -11,7 +6,58 @@ const isPair = function (a, fn){
 
 
 
-isPair(4)
+
+
+
+
+
+
+
+// function getRandom(max){
+//     return Math.floor(Math.random()*max)
+// }
+// const solution = getRandom(11)
+// console.log(solution)
+
+// function isRight(n){
+//     return solution === n
+// }
+// function guess(){
+//     const number = prompt('votre nombre ?') * 1
+//     return isRight(number)
+// }
+
+// for (i=0; i < 3; i++){
+//     if (guess()){
+//         console.log('bravo')
+//         break;
+//     }else if (i === 2){
+//         console.log('perdu')
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const isPair = function (a, fn){
+//     if (a % 2 === 0){
+//         fn(a) 
+//     }
+// }
+
+
+// isPair(4, function (n){
+//     console.log(`mon nombre ${n} est pair`)
+// })
 
 
 
