@@ -1,6 +1,9 @@
-
-
-
+function palymdrome(a){
+    a.split('').reverse().join('')
+}
+let mot = 'bonjour'
+palymdrome(mot)
+console.log(mot)
 
 
 
