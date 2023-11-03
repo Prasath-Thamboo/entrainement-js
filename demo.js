@@ -1,11 +1,84 @@
-function palymdrome(a){
-    a.split('').reverse().join('')
+const students = [
+    {
+        name: 'john', 
+        notes: [12, 14, 15, 16]
+    },
+    {
+        name: 'Sopgie', 
+        notes: [1, 14, 1, 16]
+    },
+    {
+        name: 'jin', 
+        notes: [12, 4, 15, 6]
+    },
+    {
+        name: 'jsei', 
+        notes: [19, 18, 15, 16]
+    },
+    
+]
+
+const moyenne = (notes) => {
+    let somme = 0 
+    for (let note of notes){
+        somme = somme + note
+    }
+    return somme / notes.length
 }
-let mot = 'bonjour'
-palymdrome(mot)
-console.log(mot)
+
+for ( let student of students){
+    student.moyenne = moyenne(student.notes)
+    
+}
+
+console.log(students)
 
 
+
+
+
+
+
+
+
+
+
+
+// function palymdrome(word){
+//     const reverseWord = word
+//     .split('')
+//     .reverse()
+//     .join()
+//     return word.toUpperCase() === reverseWord
+    
+// }
+
+
+
+// const words = {
+//     kayak : true, 
+//     SOS : true, 
+//     Kayak : true, 
+//     Bonjour: false,
+// }
+
+// for (let word in words){
+//     if (palymdrome(word) !== words[word]){
+//         console.error(`palydrome(${word}) aurait du etre true`)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// reverse() : inverser un tableau 
+// split() : rendre une chaine de caractère en tableau 
+// join(): joindre les caractères 
 
 
 
