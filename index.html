@@ -3,10 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .contain{
+            display:none;
+            background: red;
+            transition: .5s;
+        }
+
+    </style>
 </head>
 <body>
+    <button onclick="ferme()"> APuuies ici man </button>
+    <div  id="contain" class="contain"><p>Salut c'est moi</p></div>
+    
+    <script>
 
-    <script src="demo.js"></script>
+        function ferme(){
+        const divNone = document.getElementById('contain');
+        if ( divNone.style.display === 'none'){
+            divNone.style.display = 'flex';
+        } else {
+            divNone.style.display = 'none';
+        }}
+
+    </script>
     
 </body>
 </html>
