@@ -1,37 +1,112 @@
-const students = [
-    {
-        name: 'john', 
-        notes: [12, 14, 15, 16]
-    },
-    {
-        name: 'Sopgie', 
-        notes: [1, 14, 1, 16]
-    },
-    {
-        name: 'jin', 
-        notes: [12, 4, 15, 6]
-    },
-    {
-        name: 'jsei', 
-        notes: [19, 18, 15, 16]
-    },
-    
-]
+let online = true
 
-const moyenne = (notes) => {
-    let somme = 0 
-    for (let note of notes){
-        somme = somme + note
-    }
-    return somme / notes.length
+let message = ""
+
+
+if (online) {
+
+message = "Utilisateur en ligne !"
+
+} else {
+
+message = "Utilisateur hors ligne !"
+
 }
 
-for ( let student of students){
-    student.moyenne = moyenne(student.notes)
-    
-}
+console.log(message)
 
-console.log(students)
+
+
+
+
+
+
+
+
+
+
+
+// const mots = ["Cachalot", "Alice", "Camille"]
+// const phrases = ["Bonjour salut aurevoir","pourquoi c'est moi", "Il était une fois" ]
+
+
+
+// function afficherResultat (score, nb){
+//     console.log('Votre score est de ' + score + ' sur ' + nb)
+// }
+
+// function choixJeu(){
+//     let choix = prompt("choisissez votre jeu")
+//     while ( choix !== "phrase" || choix !== "mot" ){
+//         choix = prompt("choisissez votre jeu")
+//     } 
+//     return choix
+// }
+
+// function jeuBoucle(liste) {
+//         for(let i = 0; i < liste.length; i++) {
+//         let motCherché = prompt ('entrez le mot ' + liste[i])
+//             if (motCherché === liste[i]){
+//                 score++
+//             }
+//         }  
+//         return score
+// }
+
+// function lancerJeu(){
+//     let choix = choixJeu()
+//     let score = 0 
+
+//     if (choix === 'mot'){
+//         jeuBoucle(mots)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// const students = [
+//     {
+//         name: 'john', 
+//         notes: [12, 14, 15, 16]
+//     },
+//     {
+//         name: 'Sopgie', 
+//         notes: [1, 14, 1, 16]
+//     },
+//     {
+//         name: 'jin', 
+//         notes: [12, 4, 15, 6]
+//     },
+//     {
+//         name: 'jsei', 
+//         notes: [19, 18, 15, 16]
+//     },
+    
+// ]
+
+
+// const moyenne = (notes) => {
+//     let somme = 0 
+//     for (let note of notes){
+//         somme = somme + note
+//     }
+//     return somme / notes.length
+// }
+
+// for ( let student of students){
+//     student.moyenne = moyenne(student.notes)
+    
+// }
+
+// console.log(students)
 
 
 
